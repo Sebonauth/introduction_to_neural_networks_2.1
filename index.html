@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction</title>
+    <title>Introduction - From Biology to Artificial Intelligence</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,56 +12,40 @@
             padding: 20px;
             background-color: #ffffff;
             font-size: 150%;
-            line-height: 1.6;
-            color: #444444;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            opacity: 1; /* Fully visible since no fade-in is needed */
+            transition: none; /* Removed transition as sections are static */
         }
         h1 {
             font-size: 2em;
             color: #333333;
-            margin: 20px 0;
+            margin-bottom: 20px;
         }
         p {
+            line-height: 1.6;
+            color: #444;
             margin-bottom: 20px;
         }
         .image-placeholder img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        strong {
-            font-weight: bold;
-        }
-        /* Optional: Enhance image container */
-        .image-container {
-            text-align: center;
+            margin-bottom: 20px; /* Space between image and heading */
         }
     </style>
-    <!-- Include MathJax for LaTeX rendering (optional) -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-
     <!-- Introduction Section -->
     <section id="introduction">
-        <!-- Image Placeholder -->
-        <div class="image-container">
-            <div class="image-placeholder">
-                <img src="path-to-image.jpg" alt="A side-by-side comparison of a biological neuron and its artificial counterpart, highlighting analogous structures and functions.">
-            </div>
+        <div class="image-placeholder">
+            <img src="path-to-split-neuron-image.jpg" alt="A split image showing a microscope view of a biological neuron on the left and a diagram of an artificial neuron on the right, connected by an arrow suggesting evolution of ideas" loading="lazy">
         </div>
-        
-        <!-- Header -->
-        <h1>Biological vs. Artificial Neurons</h1>
-        
-        <!-- Introductory Text -->
-        <p>Have you ever wondered how your brain processes the vast amount of information it receives every day? Imagine your brain as a bustling city with intricate networks of roads and messengers carrying information. Just like these messengers, <strong>biological neurons</strong> transmit electrical and chemical signals throughout your nervous system.</p>
-        
-        <!-- Lesson Overview -->
-        <p>In this lesson, we'll explore the fundamental building blocks of both the brain and artificial neural networks: <strong>neurons</strong>. We'll compare biological neurons—the inspiration for artificial neural networks—with their artificial counterparts. By understanding these similarities and differences, you'll gain insight into how computers can learn to recognize patterns and make decisions, much like our own brains.</p>
+        <h1>From Biology to Artificial Intelligence</h1>
+        <p>Your brain contains roughly 86 billion neurons, working together to help you read these words, understand their meaning, and form memories. These incredible cells inspired the development of artificial neural networks, which now power many AI applications you use daily.</p>
     </section>
-
 </body>
 </html>
-
