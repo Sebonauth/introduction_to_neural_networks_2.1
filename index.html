@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction - From Biology to Artificial Intelligence</title>
+    <title>From Biological Inspiration to Artificial Networks</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,35 +17,67 @@
             margin-bottom: 20px;
             padding: 20px;
             background-color: #ffffff;
-            opacity: 1; /* Fully visible since no fade-in is needed */
-            transition: none; /* Removed transition as sections are static */
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
         }
         h1 {
-            font-size: 2em;
-            color: #333333;
-            margin-bottom: 20px;
+            color: #333;
+            margin-top: 20px;
         }
         p {
             line-height: 1.6;
             color: #444;
             margin-bottom: 20px;
         }
+        .image-placeholder {
+            text-align: left;
+            margin-bottom: 20px;
+        }
         .image-placeholder img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
-            margin-bottom: 20px; /* Space between image and heading */
         }
     </style>
 </head>
 <body>
-    <!-- Introduction Section -->
-    <section id="introduction">
+    <section id="section1">
+        
+        
         <div class="image-placeholder">
-            <img src="path-to-split-neuron-image.jpg" alt="A split image showing a microscope view of a biological neuron on the left and a diagram of an artificial neuron on the right, connected by an arrow suggesting evolution of ideas" loading="lazy">
+            <img src="/placeholder.svg?height=400&width=800" alt="A side-by-side comparison of a biological neuron and its artificial counterpart">
         </div>
-        <h1>From Biology to Artificial Intelligence</h1>
-        <p>Your brain contains roughly 86 billion neurons, working together to help you read these words, understand their meaning, and form memories. These incredible cells inspired the development of artificial neural networks, which now power many AI applications you use daily.</p>
+
+        <h1>From Biological Inspiration to Artificial Networks</h1>
+
+        <p>Imagine you're holding a hot cup of coffee, and suddenly it starts to slip. Before you even consciously think about it, your hand has already tightened its grip. How did your brain react so quickly? The answer lies in the incredible network of neurons in your brain – about 86 billion of them – working together in perfect harmony. Today, we're going to explore how these remarkable biological cells inspired one of the most powerful tools in artificial intelligence.</p>
     </section>
+
+    <script>
+        // Show the first section initially
+        document.getElementById("section1").style.display = "block";
+        document.getElementById("section1").style.opacity = "1";
+
+        // Function to show the next section with fade-in and then scroll to it
+        function showNextSection(nextSectionId) {
+            const currentButton = event.target;
+            const nextSection = document.getElementById("section" + nextSectionId);
+            
+            // Hide the clicked button
+            currentButton.style.display = "none";
+            
+            // Show the next section with a fade-in effect
+            nextSection.style.display = "block";
+            setTimeout(() => {
+                nextSection.style.opacity = "1";
+            }, 10);
+
+            // Scroll to the new section after it fades in
+            setTimeout(() => {
+                nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 500);
+        }
+    </script>
 </body>
 </html>
